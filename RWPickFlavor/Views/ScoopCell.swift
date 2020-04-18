@@ -25,16 +25,18 @@
 /// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
+
 import UIKit
 
 class ScoopCell: UICollectionViewCell {
   
   override func awakeFromNib() {
     super.awakeFromNib()
+
     layer.cornerRadius = 10.0
   }
   
-  // MARK: Outlets
+  // MARK: Outlets  
   @IBOutlet var textLabel: UILabel!
   @IBOutlet var scoopView: ScoopView!
 }

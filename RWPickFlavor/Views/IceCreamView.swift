@@ -29,26 +29,29 @@
 import UIKit
 
 @IBDesignable
+
 class IceCreamView: UIView {
   
   // MARK: Variables
+  
   @IBInspectable var iceCreamTopColor: UIColor = Flavor.vanilla().topColor {
     didSet {
       setNeedsDisplay()
     }
   }
-
+  
   @IBInspectable var iceCreamBottomColor: UIColor = Flavor.vanilla().bottomColor {
     didSet {
       setNeedsDisplay()
     }
   }
-
+  
   private let coneOuterColor = UIColor.RGB(red: 184, green: 104, blue: 50)
   private let coneInnerColor = UIColor.RGB(red: 209, green: 160, blue: 102)
   private let coneLaticeColor = UIColor.RGB(red: 235, green: 183, blue: 131)
   
   // MARK: View Lifecycle
+  
   override func draw(_ frame: CGRect) {
     
     // General Declarations

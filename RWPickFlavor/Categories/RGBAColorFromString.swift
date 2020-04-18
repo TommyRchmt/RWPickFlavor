@@ -29,13 +29,13 @@
 import UIKit
 
 extension UIColor {
-
+  
   class func RGB(red: CGFloat, green: CGFloat, blue: CGFloat) -> UIColor {
     return RGBA(red: red, green: green, blue: blue, alpha: 255.0)
   }
-
+  
   class func RGBA(red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) -> UIColor {
-    return UIColor(red: red/255.0, green: green/255.0, blue: blue/255.0, alpha: alpha/255.0)
+    return UIColor(red: red / 255.0, green: green / 255.0, blue: blue / 255.0, alpha: alpha / 255.0)
   }
   
   class func RGBAColorFromString(string: String?) -> UIColor? {

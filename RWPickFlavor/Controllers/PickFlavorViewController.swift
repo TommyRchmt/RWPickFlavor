@@ -105,7 +105,6 @@ public class PickFlavorViewController: UIViewController {
   }
   
   // MARK: Internal
-  
   private func updateWithFlavor(_ flavor: Flavor) {
     iceCreamView.updateWithFlavor(flavor)
     label.text = flavor.name

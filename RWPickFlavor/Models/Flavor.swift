@@ -37,6 +37,7 @@ struct Flavor {
   let bottomColor: UIColor
   
   // MARK: Static Methods
+  
   static func vanilla() -> Flavor {
     return Flavor(name: "Vanilla",
                   topColor: UIColor.RGB(red: 251, green: 248, blue: 236),
@@ -50,6 +51,7 @@ struct Flavor {
   }
   
   // MARK: Initializers
+  
   init(name: String, topColor: UIColor, bottomColor: UIColor) {
     self.name = name
     self.topColor = topColor

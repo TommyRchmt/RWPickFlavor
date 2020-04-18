@@ -29,9 +29,11 @@
 import UIKit
 
 @IBDesignable
+
 class ScoopView: UIView {
   
   // MARK: Variables
+  
   @IBInspectable var topColor: UIColor = Flavor.vanilla().topColor {
     didSet {
       setNeedsDisplay()
@@ -45,8 +47,8 @@ class ScoopView: UIView {
   }
   
   // MARK: View Lifecycle
+  
   override func draw(_ rect: CGRect) {
-    
     let context = UIGraphicsGetCurrentContext()!
     
     let path = CGPath(ellipseIn: bounds, transform: nil)
